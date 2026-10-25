@@ -1,0 +1,76 @@
+/* @media (min-width: 1200px) {
+    .col-lg-22 {
+      width: 91.66666667%;
+    } */
+
+#detailsItems{
+  display: none;
+    width: 91%;
+    border: 1px solid #dcdcdc;
+    margin: 50px auto;
+    background-color: #fff;
+}
+#detailsItems>#detailsItems_up{
+    display: flex;
+    width: 100%;
+    height: 550px;
+}
+#detailsItems>#detailsItems_up > #detailsItems_up_right{
+    width: 58%;
+    height: 100%;
+    border: 1px solid black;
+}
+#detailsItems>#detailsItems_up > #detailsItems_up_right > #bigPic{
+    width: 96%;
+    height: 70%;
+    border: 1px solid purple;
+    margin: 15px;
+    /* overflow: hidden; */
+    position: relative;
+    direction: ltr;
+}
+#detailsItems>#detailsItems_up > #detailsItems_up_right > #bigPic > #detailsSlideShow{
+    width: 400%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: left 0.5s;
+
+}
+#detailsItems>#detailsItems_up > #detailsItems_up_right > #bigPic > #detailsSlideShow > .itemsGallery{
+    width: 25%;
+    height: 100%;
+    flex-shrink: 0;
+}
+#detailsItems>#detailsItems_up > #detailsItems_up_right > #bigPic > #detailsSlideShow > .itemsGallery > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#detailsItems>#detailsItems_up > #detailsItems_up_right > #smallPics{
+    width: 96%;
+    height: 20%;
+    border: 1px solid purple;
+    margin: 15px;
+}
+
+
+#detailsItems>#detailsItems_up > #detailsItems_up_left{
+    width: 42%;
+    height: 100%;
+    border: 1px solid blue;
+
+}
+
+#detailsItems>#detailsItems_center{
+    width: 100%;
+    height: 150px;
+    border: 1px solid blue;
+    margin: 20px 0 20px 0;
+}
+#detailsItems>#detailsItems_bottom{
+    width: 100%;
+    height: 450px;
+    border: 1px solid red;
+}

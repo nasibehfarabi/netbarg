@@ -1,0 +1,535 @@
+#content {
+    margin-top: 15px;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#content>#slideshow,
+#content>#menu,
+#content>.discount>div,
+#slideshow>#gal>.items>img  {
+    border-radius: 10px;
+}
+
+/* ------------slideshow------- */
+#slideshow {
+    width: 79%;
+    /* height: 473px; */
+    position: relative;
+    overflow: hidden;
+    direction: ltr;
+}
+
+#slideshow>#gal {
+    width: 500%;
+    /* height: 100%; */
+    transition: 0.5s;
+    position: relative;
+    left: 0%;
+}
+
+#slideshow>#gal>.items {
+    width: 20%;
+    /* height: 100%; */
+    float: left;
+}
+
+#slideshow>#gal>.items>img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+#slideshow>#right {
+    transition: 0.2s;
+    background: url("../images/right.png") no-repeat 50%;
+    background-size: 70%;
+    width: 50px;
+    height: 70px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+#slideshow>#left {
+    transition: 0.2s;
+    background: url("../images/left.png") no-repeat 50%;
+    background-size: 70%;
+
+    width: 50px;
+    height: 70px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+
+#but {
+    height: 48px;
+    width: 200px;
+    /* background: red; */
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    top: -50px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    list-style: none;
+    z-index: 300;
+}
+
+#but>li {
+    width: 12px;
+    height: 12px;
+    background: black;
+    margin-top: 16px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+#but>li:hover {
+    width: 30px;
+    height: 12px;
+    background: white;
+    margin-top: 16px;
+    border-radius: 50px;
+}
+
+#but>li.sell {
+    background: white;
+    width: 30px;
+}
+
+/* ---------- menu  ----------- */
+#content>#menu {
+    width: 12%;
+    /* height: 473px; */
+}
+
+#content>#menu>.items {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#content>#menu>.items img{
+    float: right;
+}
+#content>#menu>.items>li {
+    background-size: 25px;
+    background-position: right;
+    padding: 11% 0 11% 7px;
+    list-style: none;
+    line-height: 15px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    color: rgb(115, 115, 115);
+    direction: ltr;
+    font-size: 15px;
+}
+
+#content>#menu .items li:hover .submenu {
+    visibility: visible;
+}
+
+#content>#menu .items li:hover {
+    color: blueviolet;
+}
+
+#content>#menu .items .submenu {
+    margin: 0;
+    padding: 0;
+    width: 185px;
+    height: 472px;
+    border: 1px solid rgb(220, 220, 220);
+    position: absolute;
+    top: 0;
+    right: 180px;
+    background: white;
+    visibility: hidden;
+}
+
+#content>#menu .items .submenu>li {
+    line-height: 36px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    list-style: none;
+    color: rgb(115, 115, 115);
+    direction: rtl;
+    margin: 0 10px 0 10px;
+}
+
+#content>.discount {
+    width: 90%;
+    height: 160px;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+}
+
+#content>.discount>div {
+    width: 32%;
+    height: 100%;
+}
+
+#content>.discount>div img {
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 10px;
+
+}
+
+
+/* ------     section   ------- */
+
+#section {
+    width: 100%;
+    background: rgb(245, 245, 245);
+    display: flex;
+    /* flex-flow: column;
+    align-items: center; */
+    flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+}
+
+#section>.health,
+#section>.sport,
+#section>.makeup {
+    width: 90%;
+    margin-top: 18px;
+
+}
+#section>.sport{
+    margin: 18px 8px 0 57px;
+}
+#section .header {
+    height: 47px;
+    width: 100%;
+    border-bottom: 1px solid rgb(28, 189, 47);
+}
+#section .health .header {
+    border-bottom: 1px solid #bd6fcb ;
+}
+
+#section .header>.imgHeader {
+    width: 25px;
+    margin: 8px 16px -7px 10px;
+}
+
+#section .header .titleHeader {
+    font-size: 22px;
+    margin: 10px 10px;
+}
+
+.line {
+    width: 210px;
+    position: relative;
+    border: 1px solid rgb(28, 189, 47);
+    top: -2px;
+}
+.health .line {
+    border: 1px solid #bd6fcb;
+}
+
+#section .main {
+    /* height: 506px; */
+    width: 100%;
+    border: 1px solid rgb(220, 220, 220);
+    display: flex;
+    flex-flow: row nowrap;
+    background: white;
+    margin-top: 10px;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.orange_lable {
+    background: rgb(255, 143, 0);
+    color: white;
+    width: 80px;
+    height: 28px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid wheat;
+    font-size: 14px;
+    line-height: 26px;
+    text-indent: 4px;
+}
+
+#section .main>.col_r {
+    width: 615px;
+    /* height: 486px; */
+    position: relative;
+}
+
+#section .main>.col_r> .col_right_img {
+    width: 594px;
+    padding: 5px 10px 0;
+}
+
+#section .main>.col_r>.ol_r {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+
+}
+
+#section .main .box1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#section .main .box2 {
+    display: flex;
+}
+
+#section .main>.col_r .box1 .name_img:hover {
+    color: rgb(28, 189, 47);
+    cursor: pointer;
+}
+
+#section .main>.col_r .box1 .name_img {
+    font-size: 28px;
+    margin: 0;
+    text-indent: 10px;
+}
+
+#section .main>.col_r .box1>.shop>img {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px -4px 10px;
+}
+
+#section .main>.col_r .box2>.takhfif {
+    width: 50px;
+    height: 50px;
+    background: rgb(28, 189, 47);
+    border-radius: 50px;
+    margin: 10px 10px -4px 10px;
+}
+#section .health .main>.col_r .box2>.takhfif {
+    background: #bd6fcb;
+}
+
+#section .main>.col_r .box2>.takhfif span {
+    position: relative;
+    top: 16px;
+    right: 10px;
+    color: white;
+}
+
+#section .main>.col_r .box2>.map {
+    color: rgb(133, 135, 133);
+    /* margin-left: 150px; */
+    padding: 23px 20px 0 0;
+    font-size: 20px;
+}
+
+#section .main>.col_r .box2>.price {
+    color: rgb(28, 189, 47);
+    margin-top: 20px;
+    margin-right: auto;
+    padding: 5px 0 0 10px;
+    border-left: 1px solid rgb(133, 135, 133);
+    font-size: 20px;
+}
+
+#section .main>.col_r .box2>.product {
+    width: 150px;
+    height: 50px;
+    background: rgb(28, 189, 47);
+    border-radius: 25px;
+    margin: 10px 10px -4px 10px;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+}
+
+#section .main>.col_l {
+    width: 615px;
+    /* height: 480px; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 7px;
+}
+
+#section .main>.col_l>div {
+    width: 49%;
+    /* height: 52%; */
+    position: relative;
+}
+
+#section .main>.col_l > .items> img {
+    width: 100%;
+
+}
+
+#section .main>.col_l .ol_l {
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+}
+
+#section .main>.col_l .box1>.shop>img {
+    width: 20px;
+    height: 20px;
+    padding:0 10px 0 10px;
+}
+
+#section .main>.col_l .box1 h4:hover {
+    color: rgb(28, 189, 47);
+    cursor: pointer;
+}
+
+#section .main>.col_l .box1 h4 {
+    font-size: 12px;
+    text-indent: 10px;
+    margin: 0;
+}
+
+#section .main>.col_l .box2>.map {
+    color: rgb(133, 135, 133);
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#section .main>.col_l .box2>.price {
+    color: rgb(28, 189, 47);
+    padding-left:10px;
+    border-left: 1px solid rgb(133, 135, 133);
+    font-size: 14px;
+    margin-right: auto;
+}
+
+#section .main>.col_l .box2>.takhfif {
+    width: 35px;
+    height: 21px;
+    background: rgb(28, 189, 47);
+    border-radius: 25px;
+    margin-right:10px;
+}
+#section .health .main>.col_l .box2>.takhfif {
+    background: #bd6fcb;
+}
+#section .main>.col_l .box2>.takhfif span {
+    position: relative;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+
+#section .footer {
+    height: 236px;
+    width: 100%;
+    /* background: url(../images/imgSection/sport/footer.jpg) no-repeat; */
+    /* background-size: 100%; */
+    border: 1px solid rgb(220, 220, 220);
+}
+#section .footer > .imgFooter {
+    width: 100%;
+    height: 100%;
+}
+/* #section .health .footer {
+    background: url("../images/imgSection/health/footer.jpg") no-repeat;
+    background-size: 100%;
+} */
+
+.app_action {
+    width: 600px;
+    height: 332px;
+    margin-top: 15px;
+    font-family: 'IRANSans', Tahoma, Arial, Helvetica, sans-serif;
+
+}
+.app_action > h4 > span{
+    font-size: 52px;
+    color: #2f2f2f;
+    /* text-align: center; */
+    font-weight: bold;
+    line-height: 10px;
+}
+
+.app_action > h2 > span{
+    font-size: 18px;
+    color: #2f2f2f;
+    font-weight: bold;
+}
+.app_action > h2 > .orange_span{
+    color:rgb(255, 143, 0) ;
+}
+.app_action > .image_app{
+    width: 550px;
+    margin: 0 auto;
+}
+
+
+
+#section > #navbar_right{
+    width: 43px;
+    height: 250px;
+    background: #4b4343;
+    margin-top: 70px;
+    border-radius: 22px;
+    position: static;
+    z-index: 300;
+}
+#section > #navbar_right > ul{
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+}
+#section > #navbar_right > ul > li{
+    height: 50px;
+    border-bottom: 1px solid white;
+    position: relative;
+}
+
+#section > #navbar_right > ul > li img{
+    width: 27px;
+    margin:10px 8px 0 0;
+    background-color: transparent;    
+}
+#section > #navbar_right > ul > .aval:hover{
+    background: rgb(255, 143, 0);
+}
+#section > #navbar_right > ul > .dovom:hover{
+    background: rgb(28, 189, 47);
+}
+
+#section > #navbar_right > ul > li > .details{
+    width: 0;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 43px;
+    transition: 0.25s;
+    z-index: 200;
+    border-radius: 22px 0 0 22px;
+}
+#section > #navbar_right span{
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    line-height: 40px;
+    display: none;
+}
+#section > #navbar_right > ul > li:hover > .details{
+    width: 120px;
+}
+#section > #navbar_right > ul > li:hover span{
+    display: block;
+}
+#section > #navbar_right > ul > .aval > .details{
+    background: rgb(255, 143, 0);
+}
+#section > #navbar_right > ul > .dovom > .details{
+    background: rgb(28, 189, 47);
+}
+
+

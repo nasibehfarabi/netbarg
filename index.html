@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/content.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/footer.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/media.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/detailsitems.css'>
+
+
+    <link href="style/fonts.css" rel="stylesheet">
+    <script src='script/json.js'></script>
+    <script src='script/fill.js'></script>
+    <script src='script/search.js'></script>
+
+
+</head>
+
+<body id="page" class="">
+
+    <div id="header">
+
+        <div id="ad"></div>
+
+        <div id="top">
+
+
+            <!-- ----  hambergeri   ---- -->
+             <div id="icon_hambergeri" onclick="show_hambergeri()">
+                <img id="hamDay" src="images/ham.day.png" alt="">
+                <img id="hamNight" src="images/ham.night.jpg" alt="">
+             </div>
+             
+            <div id="hambergeri">
+                <div class="log_hambergeri">
+
+                    <div class="login">
+                        <img src="images/login.png" alt="">
+                        <span>ورود</span>
+                        <div class="border_left"></div>
+                    </div>
+                    <div class="logout">
+                        <img src="images/signup.png" alt="">
+                        <span>ثبت نام</span>
+                    </div>
+
+                </div>
+                <div class="map_hambergeri">
+                    <div class="map">
+                        <a href="">
+                            <img src="images/map-roye-naghshe.svg" alt="">
+                            <span>نت برگ های روی نقشه</span>
+                        </a>
+                    </div>
+                </div>
+                <ul class="items">
+                    <li><img src="images/menu01.png" alt="">تفریحی و ورزشی</li>
+                    <li><img src="images/menu02.png" alt="">رستوران و فست فود</li>
+                    <li><img src="images/menu03.png" alt="">هنر و تئاتر</li>
+                    <li><img src="images/menu04.png" alt="">پزشکی و سلامت</li>
+                    <li><img src="images/menu05.png" alt="">زیبایی و آرایشی</li>
+                    <li><img src="images/menu06.png" alt="">تورهای مسافرتی</li>
+                    <li><img src="images/menu07.png" alt="">آموزشی</li>
+                    <li><img src="images/menu08.png" alt="">کد تخفیف</li>
+                    <li><img src="images/menu09.png" alt="">هتل و اقامتگاه</li>
+                </ul>
+            </div>
+
+            <div class="logo">
+                <img class="logoDay" src="images/netbarg.png" alt="">
+                <img class="logoNight" src="images/netbarg_dark.jpg" alt=""></div>
+
+            <div class="icon_SabadSearch">
+                <img src="images/sabad.PNG" alt="">
+                <img src="images/search.PNG" alt="">
+            </div> 
+
+            <input id="search" type="text" placeholder="جستجو(مکان ورزشی. کالا...)">
+
+            <div id="overlay" class="hide"></div>
+            <div id="result" class="hide">
+                <!-- <div class="rowResult">
+                    <img src="images/imgSection/sport/01.jpg" alt="">
+                    <span>کارتینک در پیست</span>
+                </div> -->
+            </div>
+
+            <div class="map">
+                <a href="">
+                    <img src="images/map-roye-naghshe.svg" alt="">
+                    <span>نت برگ های روی نقشه</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="bottom">
+            <div class="home">
+                <img src="images/home.png" alt="">
+            </div>
+            <div class="city">
+                <button id="city" onclick="show_city()">
+                    <span>مازندران</span>
+                    <div class="jahat"></div>
+                </button>
+
+                <div id="dark_mode" onclick="change_mode()"><img src="images/moon.png" alt=""></div>
+
+                <ul id="drowpDown">
+                    <li>گلستان</li>
+                    <li>گیلان</li>
+                    <li>سمنان</li>
+                    <li>تهران</li>
+                    <li>قم</li>
+                    <li>مشهد</li>
+                    <li>اصفهان</li>
+                    <li>شیراز</li>
+                </ul>
+
+            </div>
+            <div class="log">
+                <div class="buy">
+                    <img src="images/shop.png" alt="">
+                    <div class="border_left"></div>
+                </div>
+                <div class="login">
+                    <img src="images/login.png" alt="">
+                    <span>ورود</span>
+                    <div class="border_left"></div>
+                </div>
+                <div class="logout">
+                    <img src="images/signup.png" alt="">
+                    <span>ثبت نام</span>
+                    <div class="border_left"></div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="content">
+
+        <div id="slideshow">
+
+            <div id="gal">
+
+                <div class="items">
+                    <img src="images/01.jpg">
+                </div>
+                <div class="items">
+                    <img src="images/02.jpg">
+                </div>
+                <div class="items">
+                    <img src="images/03.jpg">
+                </div>
+                <div class="items">
+                    <img src="images/04.jpg">
+                </div>
+                <div class="items">
+                    <img src="images/05.jpg">
+                </div>
+
+            </div>
+
+            <div id="right" onclick="right()"> </div>
+            <div id="left" onclick="left()"> </div>
+
+            <ul id="but">
+                <li onclick="change(0)"></li>
+                <li onclick="change(1)"></li>
+                <li onclick="change(2)"></li>
+                <li onclick="change(3)"></li>
+                <li onclick="change(4)"></li>
+            </ul>
+
+        </div>
+        <div id="menu">
+            <ul class="items">
+                <li>تفریحی و ورزشی
+                    <img src="images/menu01.png" alt="">
+                    <ul class="submenu">
+                        <li>شهربازی و مراکز تفریحی</li>
+                        <li> و مراکز تفریحی</li>
+                        <li>شهربازی و مراکز تفریحی</li>
+                        <li>شهربازی و مراکز </li>
+                    </ul>
+                </li>
+                <li>رستوران و فست فود
+                    <img src="images/menu02.png" alt="">
+                    <ul class="submenu">
+                        <li> غذای ایتالیایی و ملل</li>
+                        <li> غذای ایتالیایی و </li>
+                        <li> غذای ایتالیایی و ملل</li>
+                        <li> غذای ایتالیایی و ملل</li>
+                        <li> غذای و ملل</li>
+                        <li> غذای ایتالیایی و ملل</li>
+                        <li> غذای ایتالیایی و ملل</li>
+                    </ul>
+                </li>
+                <li>هنر و تئاتر<img src="images/menu03.png" alt=""></li>
+                <li>پزشکی و سلامت<img src="images/menu04.png" alt=""></li>
+                <li>زیبایی و آرایشی<img src="images/menu05.png" alt=""></li>
+                <li>تورهای مسافرتی<img src="images/menu06.png" alt=""></li>
+                <li>آموزشی<img src="images/menu07.png" alt=""></li>
+                <li>کد تخفیف<img src="images/menu08.png" alt=""></li>
+                <li>هتل و اقامتگاه<img src="images/menu09.png" alt=""></li>
+            </ul>
+        </div>
+        
+        <div class="discount">
+            <div><img src="images/discount1.jpg" alt=""></div>
+            <div><img src="images/discount2.jpg" alt=""></div>
+            <div><img src="images/discount3.jpg" alt=""></div>
+        </div>
+
+
+        <div id="section">
+            <div id="navbar_right">
+                <ul>
+                    
+                    <li class="aval">
+                        <a href="#sport_navigation">
+                        <img src="images/imgSection/sport/sport.png" alt=""></a>
+                        <div class="details"><span>ورزشی</span></div>
+                    </li>
+                    <li class="dovom">
+                        <a href="#health_navigation">
+                        <img src="images/imgSection/health/health.png" alt=""></a>
+                        <div class="details"><span>آرایشی</span></div>
+                    </li>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="app_action">
+            <h4>
+                <span>با اپلیکیشن </span>
+                <img src="images/netbarg_app_action.png" alt="">
+            </h4>
+            <h2>
+                <span>جـدیدتـرین </span>
+                <span class="orange_span">تـخـفـیـف‌ها </span>
+                <span>هـمـیشه در جـیـب شـماسـت!</span>
+            </h2>
+            <div class="image_app">
+                <img src="images/app_action/1.PNG" alt="">
+                <img src="images/app_action/2.PNG" alt="">
+                <img src="images/app_action/3.PNG" alt="">
+                <img src="images/app_action/4.PNG" alt="">
+                <img src="images/app_action/5.PNG" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="detailsItems">
+        <div id="detailsItems_up">
+            <div id="detailsItems_up_right">
+                <div id="bigPic">
+                    <div id="detailsSlideShow">
+                        <div class="itemsGallery">
+                            <img src="images/imgSection/sport/05.jpg" alt="">
+                        </div>
+                        <div class="itemsGallery">
+                            <img src="images/imgSection/sport/06.jpg" alt="">
+                        </div>
+                        <div class="itemsGallery">
+                            <img src="images/imgSection/sport/07.jpg" alt="">
+                        </div>
+                        <div class="itemsGallery">
+                            <img src="images/imgSection/sport/06.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="smallPics"></div>
+                
+            </div>
+            <div id="detailsItems_up_left"></div>
+
+        </div>
+        <div id="detailsItems_center"></div>
+        <div id="detailsItems_bottom"></div>
+
+    </div>
+    <!-- <div id="footer">
+        <div class="news "></div>
+        <div class="award align">award</div>
+        <div class="offer align">offer</div>
+        <div class="menu align">menu</div>
+        <div class="box align">box</div>
+        <div class="description ">description</div>
+        <div class="container">container</div>
+
+    </div> -->
+
+
+    <div id="bg_filter" onclick="hide_hambergeri()"></div>
+    <div class="up"> up </div>
+
+    <script src='script/slideshow.js'></script>
+
+</body>
+
+</html>
